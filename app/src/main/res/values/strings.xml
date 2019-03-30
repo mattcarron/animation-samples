@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Animation Samples</string>
+    <string name="title_activity_android_framework_animation">AndroidFrameworkAnimation</string>
+    <string name="animations">Animations</string>
+    <string name="lottie">Lottie</string>
+    <string name="android_framework_task_animation">Android framework - task animation</string>
+    <string name="android_framework_task_animator">Android framework - task animator</string>
+    <string name="android_framework_animator">Android framework - Animator</string>
+    <string name="android_framework_animation">Android framework - Animation</string>
+    <string name="android_framework_drawable_animation">Android framework - Drawable Animation</string>
+    <string name="android_framework_video_animation">Android framework - Video</string>
+    <string name="android_framework_loading_video_animation">Android framework - Video with Loading</string>
+    <string name="motionlayout">MotionLayout</string>
+    <string name="scale">Scale</string>
+    <string name="play_animation">Play animation</string>
+    <string name="pause_animation">Pause animation</string>
+    <string name="change_colour">Change colour</string>
+    <string name="progress">Progress</string>
+    <string name="xml_version">XML Version</string>
+    <string name="programmatic_version">Programmatic version</string>
+    <string name="dynamic_properties">Dynamic properties</string>
+    <string name="animation_listeners">Animation listeners</string>
+    <string name="attributes">Attributes</string>
+</resources>

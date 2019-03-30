@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".androidframework.AndroidFrameworkAnimationTaskActivity"
+        android:padding="30dp">
+
+    <Button
+            android:id="@+id/animate_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animate"
+            android:layout_centerHorizontal="true"/>
+
+    <ImageView
+            android:id="@+id/imageview"
+            android:layout_below="@+id/animate_btn"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"/>
+
+    <ImageView
+            android:id="@+id/imageview_morphing_icon"
+            android:layout_below="@+id/imageview"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>

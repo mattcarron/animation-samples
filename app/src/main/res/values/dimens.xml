@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="pencilAnimation_drawDistance">190dp</dimen>
+</resources>

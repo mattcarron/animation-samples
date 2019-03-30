@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".androidframework.AndroidFrameworkAnimationTaskActivity"
+        android:padding="30dp">
+
+    <TextView
+            android:id="@+id/textview_alpha"
+            android:text="Alpha"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/textview_scale"
+            android:text="Scale"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textview_alpha"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/textview_translate"
+            android:text="Translate"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textview_scale"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/textview_rotation"
+            android:text="Rotation"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/textview_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/textview_alltypes"
+            android:text="All in Set"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/textview_rotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

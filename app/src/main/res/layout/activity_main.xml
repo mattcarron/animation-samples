@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="40dp"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/lottie"
+            android:layout_gravity="center"
+            android:text="@string/lottie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/androidFrameworkTaskAnimation"
+            android:layout_gravity="center"
+            android:text="@string/android_framework_task_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/androidFrameworkTaskAnimator"
+            android:layout_gravity="center"
+            android:text="@string/android_framework_task_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/androidFrameworkViewAnimation"
+            android:layout_gravity="center"
+            android:text="@string/android_framework_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/androidFrameworkAnimator"
+            android:layout_gravity="center"
+            android:text="@string/android_framework_animator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/androidFrameworkDrawableAnimation"
+            android:layout_gravity="center"
+            android:text="@string/android_framework_drawable_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/androidFrameworkVideoAnimation"
+            android:layout_gravity="center"
+            android:text="@string/android_framework_video_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/androidFrameworkLoadingVideoAnimation"
+            android:layout_gravity="center"
+            android:text="@string/android_framework_loading_video_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/motionLayout"
+            android:layout_gravity="center"
+            android:text="@string/motionlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

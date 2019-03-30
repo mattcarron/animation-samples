@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.animationsamples">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".androidframework.AndroidFrameworkAnimationTaskActivity"
+                android:label="@string/title_activity_android_framework_animation"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name=".lottie.LottieAnimationTaskActivity"/>
+        <activity android:name=".MotionLayoutActivity"/>
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".androidframework.AndroidFrameworkViewAnimationActivity"/>
+        <activity android:name=".androidframework.AndroidFrameworkAnimatorActivity"/>
+        <activity android:name=".androidframework.AndroidFrameworkDrawableAnimationActivity"/>
+        <activity android:name=".androidframework.AndroidFrameworkAnimatorTaskActivity"/>
+        <activity android:name="com.example.animationsamples.lottie.LottieAnimationXMLActivity"/>
+        <activity android:name="com.example.animationsamples.lottie.LottieAnimationActivity"/>
+        <activity android:name="com.example.animationsamples.lottie.LottieAnimationAttributesActivity"/>
+        <activity android:name="com.example.animationsamples.lottie.LottieAnimationAnimationListeners"/>
+        <activity android:name="com.example.animationsamples.lottie.LottieAnimationDynamicPropertiesActivity"/>
+        <activity android:name=".video.AndroidFrameworkVideoActivity"/>
+        <activity android:name=".video.AndroidFrameworkLoadingVideoActivity"/>
+    </application>
+
+        </manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <View
+            android:id="@+id/pencil_line_view"
+            android:layout_alignBottom="@+id/pencil_imageview"
+            android:background="#000000"
+            android:layout_marginLeft="84dp"
+            android:layout_width="@dimen/pencilAnimation_drawDistance"
+            android:layout_height="6dp"/>
+
+    <View
+            android:id="@+id/pencil_line_view_cover_up"
+            android:layout_alignBottom="@+id/pencil_imageview"
+            android:background="#F8F8F9"
+            android:layout_marginLeft="84dp"
+            android:layout_width="@dimen/pencilAnimation_drawDistance"
+            android:layout_height="6dp"/>
+
+    <ImageView
+            android:id="@+id/pencil_imageview"
+            android:src="@drawable/pencil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="65dp"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/pencilAnimation"
+            android:layout_width="370dp"
+            android:layout_height="370dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/pencil_line_view"/>
+
+</RelativeLayout>

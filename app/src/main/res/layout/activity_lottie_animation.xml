@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_margin="30dp"
+              android:layout_height="match_parent">
+
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/xml_version"
+            android:id="@+id/lottieXML"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/programmatic_version"
+            android:id="@+id/lottieProgrammatically"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/attributes"
+            android:id="@+id/lottieAttributes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/animation_listeners"
+            android:id="@+id/lottieAnimationListeners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/dynamic_properties"
+            android:id="@+id/lottieDynamicProperties"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
