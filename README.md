@@ -3,7 +3,10 @@ Animation Samples featured in the 'Three approaches to Animations' talk by [Conn
 
 
 ## Our Task 
-Given a Lottie animation, create an animation using each of the following animation tools and evaluate each method:
+Given a Lottie animation, create an animation using each of the following animation tools and evaluate each method. 
+
+Along side the task the project includes:
+
 1. Android Framework
   - Examples of: 
     - View Animation
