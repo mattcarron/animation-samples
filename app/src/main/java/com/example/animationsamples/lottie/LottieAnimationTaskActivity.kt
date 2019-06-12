@@ -16,6 +16,7 @@ class LottieAnimationTaskActivity : AppCompatActivity() {
         lottieProgrammatically.setOnClickListener { launchIntent(AnimationType.LOTTIE_PROGRAMMATICALLY) }
         lottieAttributes.setOnClickListener { launchIntent(AnimationType.LOTTIE_ATTRIBUTES) }
         lottieAnimationListeners.setOnClickListener { launchIntent(AnimationType.LOTTIE_ANIMATION_LISTENER) }
+        lottieAnimationListenersShortCircuit.setOnClickListener { launchIntent(AnimationType.LOTTIE_ANIMATION_LISTENER_SHORT_CIRCUIT) }
         lottieDynamicProperties.setOnClickListener { launchIntent(AnimationType.LOTTIE_DYNAMIC_PROPERTIES) }
     }
 
@@ -25,6 +26,7 @@ class LottieAnimationTaskActivity : AppCompatActivity() {
             AnimationType.LOTTIE_ATTRIBUTES -> Intent(this, LottieAnimationAttributesActivity::class.java)
             AnimationType.LOTTIE_PROGRAMMATICALLY -> Intent(this, LottieAnimationActivity::class.java)
             AnimationType.LOTTIE_ANIMATION_LISTENER -> Intent(this, LottieAnimationAnimationListeners::class.java)
+            AnimationType.LOTTIE_ANIMATION_LISTENER_SHORT_CIRCUIT -> Intent(this, LottieAnimationAnimationListenersShortcircuit::class.java)
             AnimationType.LOTTIE_DYNAMIC_PROPERTIES -> Intent(this, LottieAnimationDynamicPropertiesActivity::class.java)
         }
         startActivity(intent)
@@ -35,6 +37,7 @@ class LottieAnimationTaskActivity : AppCompatActivity() {
         LOTTIE_PROGRAMMATICALLY,
         LOTTIE_ATTRIBUTES,
         LOTTIE_ANIMATION_LISTENER,
+        LOTTIE_ANIMATION_LISTENER_SHORT_CIRCUIT,
         LOTTIE_DYNAMIC_PROPERTIES
     }
 }

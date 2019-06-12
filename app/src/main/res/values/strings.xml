@@ -21,5 +21,6 @@
     <string name="programmatic_version">Programmatic version</string>
     <string name="dynamic_properties">Dynamic properties</string>
     <string name="animation_listeners">Animation listeners</string>
+    <string name="animation_listeners_shortcircuit">Animation listeners short circuit</string>
     <string name="attributes">Attributes</string>
 </resources>

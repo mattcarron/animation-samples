@@ -40,6 +40,14 @@
     <Button
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
+            android:text="@string/animation_listeners_shortcircuit"
+            android:id="@+id/lottieAnimationListenersShortCircuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
             android:text="@string/dynamic_properties"
             android:id="@+id/lottieDynamicProperties"
             android:layout_width="wrap_content"
