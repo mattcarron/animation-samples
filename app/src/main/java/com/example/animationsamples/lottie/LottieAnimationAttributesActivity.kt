@@ -12,7 +12,7 @@ class LottieAnimationAttributesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lottie_animation_attributes)
 
         playAnimationButton.setOnClickListener {
-            pencilAnimation.playAnimation()
+            watch_animation.playAnimation()
         }
     }
 }

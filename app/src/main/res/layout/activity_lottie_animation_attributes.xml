@@ -14,14 +14,13 @@
             android:layout_height="wrap_content"/>
 
     <com.airbnb.lottie.LottieAnimationView
-            android:layout_marginTop="20dp"
-            android:id="@+id/pencilAnimation"
+            android:id="@+id/watch_animation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="center"
             app:lottie_scale="0.3"
+            app:lottie_speed="4"
             app:lottie_repeatCount="3"
             app:lottie_repeatMode="reverse"
-            app:lottie_fileName="pencil_write_anim.json"/>
-
+            app:lottie_fileName="watch_progress.json"/>
 </LinearLayout>

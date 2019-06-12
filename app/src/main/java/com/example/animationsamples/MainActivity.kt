@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         androidFrameworkDrawableAnimation.setOnClickListener { launchIntent(ANDROID_FRAMEWORK_DRAWABLE_ANIMATION) }
         androidFrameworkVideoAnimation.setOnClickListener { launchIntent(ANDROID_FRAMEWORK_VIDEO_ANIMATION) }
         androidFrameworkLoadingVideoAnimation.setOnClickListener { launchIntent(ANDROID_FRAMEWORK_LOADING_VIDEO_ANIMATION) }
-        motionLayout.setOnClickListener { launchIntent(MOTION_LAYOUT) }
     }
 
     private fun launchIntent(animationType: AnimationType) {
@@ -33,7 +32,6 @@ class MainActivity : AppCompatActivity() {
             ANDROID_FRAMEWORK_TASK_ANIMATION -> Intent(this, AndroidFrameworkAnimationTaskActivity::class.java)
             ANDROID_FRAMEWORK_TASK_ANIMATOR -> Intent(this, AndroidFrameworkAnimatorTaskActivity::class.java)
             ANDROID_FRAMEWORK_VIEW_ANIMATION -> Intent(this, AndroidFrameworkViewAnimationActivity::class.java)
-            MOTION_LAYOUT -> Intent(this, MotionLayoutActivity::class.java)
             ANDROID_FRAMEWORK_ANIMATOR -> Intent(this, AndroidFrameworkAnimatorActivity::class.java)
             ANDROID_FRAMEWORK_DRAWABLE_ANIMATION -> Intent(this, AndroidFrameworkDrawableAnimationActivity::class.java)
             ANDROID_FRAMEWORK_VIDEO_ANIMATION -> Intent(this, AndroidFrameworkVideoActivity::class.java)
@@ -51,7 +49,6 @@ class MainActivity : AppCompatActivity() {
         ANDROID_FRAMEWORK_DRAWABLE_ANIMATION,
         ANDROID_FRAMEWORK_VIDEO_ANIMATION,
         ANDROID_FRAMEWORK_LOADING_VIDEO_ANIMATION,
-        MOTION_LAYOUT
     }
 
 }

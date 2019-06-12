@@ -13,8 +13,7 @@
             android:layout_height="wrap_content"/>
 
     <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/pencilAnimation"
+            android:id="@+id/watch_animation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
 </LinearLayout>

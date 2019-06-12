@@ -37,7 +37,6 @@
         <activity android:name=".lottie.LottieAnimationDynamicPropertiesActivity"/>
         <activity android:name=".video.AndroidFrameworkVideoActivity"/>
         <activity android:name=".video.AndroidFrameworkLoadingVideoActivity"/>
-        <activity android:name=".MotionLayoutActivity"/>
     </application>
 
 </manifest>
