@@ -12,7 +12,8 @@ Along side the task the project includes:
     - View Animation
     - Proterty Animator
     - DrawableAnimation
-    -VectoryDrawableAnimation 
+    - VectoryDrawableAnimation 
+    
   - Two approuches to the task:
     - View Animation
     - Proterty Animator
