@@ -26,8 +26,8 @@
             android:layout_marginTop="20dp"
             android:id="@+id/pencilAnimation"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:lottie_fileName="pencil_write_anim.json"
+            android:layout_height="match_parent"
+            app:lottie_fileName="throwball.json"
             app:lottie_loop="true"/>
 
 </LinearLayout>

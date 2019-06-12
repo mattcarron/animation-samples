@@ -2,8 +2,10 @@ package com.example.animationsamples.lottie
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.airbnb.lottie.LottieAnimationView
 import com.example.animationsamples.R
 import kotlinx.android.synthetic.main.activity_lottie_animation_listeners.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class LottieAnimationAnimationListeners : AppCompatActivity() {
 
@@ -11,26 +13,23 @@ class LottieAnimationAnimationListeners : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lottie_animation_listeners)
 
+        var downloading: Boolean
         playAnimationButton.setOnClickListener {
-            pencilAnimation.setAnimation("pencil_write_anim.json")
-            pencilAnimation.playAnimation()
-            pencilAnimation.loop(true)
-
-            var forwardAnimation = true
-            pencilAnimation.addAnimatorUpdateListener {
-
+            downloading = true
+            lottieAnimationView.playAnimation()
+            lottieAnimationView.addAnimatorUpdateListener { valueAnimator ->
                 // Set animation progress
-                val progress = (it.animatedValue as Float * 100).toInt()
+                val progress = (valueAnimator.animatedValue as Float * 100).toInt()
                 progressTv.text = "Progress: $progress%"
 
-                // Reverse animation
-                if (forwardAnimation && progress >= 50 ||
-                    !forwardAnimation && progress <= 0
-                ) {
-                    forwardAnimation = !forwardAnimation
-                    pencilAnimation.reverseAnimationSpeed()
+                if (downloading && progress >= 40) {
+                    lottieAnimationView.progress = 0f
                 }
             }
+        }
+
+        downloadFinishedButton.setOnClickListener {
+            downloading = false
         }
     }
 }

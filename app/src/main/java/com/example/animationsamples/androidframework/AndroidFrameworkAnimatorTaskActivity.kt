@@ -90,7 +90,9 @@ class AndroidFrameworkAnimatorTaskActivity : AppCompatActivity() {
             x - xDistancePixels - pencilWidth / 2,
             y
         )
-        val objectAnimatorArc = ObjectAnimator.ofFloat(pencil, View.TRANSLATION_X, View.TRANSLATION_Y, path)
+        val pencilPathTranslation = ObjectAnimator.ofFloat(
+            pencil, View.TRANSLATION_X, View.TRANSLATION_Y, path)
+
         // Pencil spin
         val objectAnimatorSpin = ObjectAnimator.ofFloat(pencil, View.ROTATION, 10f, -365f)
 
@@ -106,7 +108,7 @@ class AndroidFrameworkAnimatorTaskActivity : AppCompatActivity() {
         })
 
         val pencilSpinSet = AnimatorSet()
-        pencilSpinSet.playTogether(objectAnimatorArc, objectAnimatorSpin)
+        pencilSpinSet.playTogether(pencilPathTranslation, objectAnimatorSpin)
         pencilSpinSet.startDelay = spinStartTime
         pencilSpinSet.duration = spinDuration
 

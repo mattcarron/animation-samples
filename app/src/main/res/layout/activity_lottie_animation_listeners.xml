@@ -13,6 +13,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+    <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/download_finished"
+            android:id="@+id/downloadFinishedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
     <TextView
             android:textSize="20sp"
             android:textStyle="bold"
@@ -25,10 +33,10 @@
 
     <com.airbnb.lottie.LottieAnimationView
             android:layout_marginTop="20dp"
-            android:id="@+id/pencilAnimation"
+            android:id="@+id/lottieAnimationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:lottie_fileName="pencil_write_anim.json"
+            app:lottie_fileName="spinner-into-confirmation.json"
             app:lottie_loop="true"/>
 
 </LinearLayout>

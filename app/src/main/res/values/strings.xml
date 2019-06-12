@@ -13,6 +13,7 @@
     <string name="motionlayout">MotionLayout</string>
     <string name="scale">Scale</string>
     <string name="play_animation">Play animation</string>
+    <string name="download_finished">Download Finished</string>
     <string name="pause_animation">Pause animation</string>
     <string name="change_colour">Change colour</string>
     <string name="progress">Progress</string>
