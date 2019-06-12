@@ -15,29 +15,38 @@ class LottieAnimationDynamicPropertiesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lottie_animation_dynamic_properties)
 
-        // Get keypath
+        // Get KeyPath
         playAnimationButton.setOnClickListener {
-            pencilAnimation.playAnimation()
+            watch_animation.playAnimation()
 
-            val log = pencilAnimation.resolveKeyPath(KeyPath("**"))
-            for (i in log) run {
-                Log.i("KeyPath", i.toString())
+            watch_animation.resolveKeyPath(KeyPath("**")).forEach {
+                Log.i("KeyPath", it.toString())
             }
         }
 
-        // Update animation properties at runtime
+        // Update properties at run time (choose 1 option):
+        // Target one specific layer
         changeColourButton.setOnClickListener {
-            pencilAnimation.addValueCallback(
-                // Target specific layer
-                KeyPath("pencil", "Group 8", "Fill 1"),
-
-                //Target wildcard(*)
-//                KeyPath("*", "Group 7", "Stroke 1"),
-
-                //Target globstar(**)
-//                KeyPath("**", "Stroke 1"),
+            watch_animation.addValueCallback(
+                KeyPath("Crown Outlines", "Group 1", "Fill 1"),
                 LottieProperty.COLOR, { Color.GREEN }
             )
+
+            // Wildcard (*)
+//            changeColourButton.setOnClickListener {
+//                watch_animation.addValueCallback(
+//                    KeyPath("*", "Group 1", "Fill 1"),
+//                    LottieProperty.COLOR, { Color.GREEN }
+//                )
+//            }
+
+            // Globstar (**)
+//            changeColourButton.setOnClickListener {
+//                watch_animation.addValueCallback(
+//                    KeyPath("**", "Fill 1"),
+//                    LottieProperty.COLOR, { Color.GREEN }
+//                )
+//            }
         }
     }
 }

@@ -4,7 +4,6 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
     <Button
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
@@ -21,13 +20,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-
     <com.airbnb.lottie.LottieAnimationView
             android:layout_marginTop="20dp"
-            android:id="@+id/pencilAnimation"
+            android:id="@+id/watch_animation"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:lottie_fileName="throwball.json"
+            app:lottie_fileName="watch_progress.json"
             app:lottie_loop="true"/>
-
 </LinearLayout>
